@@ -5,6 +5,7 @@
         private double radius;
         public Disk(double radius)
         {
+            ArgumentOutOfRangeException.ThrowIfNegative(radius, nameof(radius));
             this.radius = radius;
         }
 
